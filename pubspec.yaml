@@ -8,14 +8,18 @@ version: 1.0.0+1
 environment:
   sdk: '>=3.2.4 <4.0.0'
 
-
+# packages
 dependencies:
   flutter:
     sdk: flutter
 
-
-  
+# icons
+  iconsax: ^0.0.8
   cupertino_icons: ^1.0.2
+
+
+# statemanagement
+  get: ^4.6.5
 
 dev_dependencies:
   flutter_test:
@@ -33,5 +37,5 @@ flutter:
 
   
   assets:
-    - images/
+    - assets/images/
  
