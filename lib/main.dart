@@ -1,23 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:learnk/util/theme/theme.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const App());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class App extends StatelessWidget {
+  const App({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-       
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+      themeMode: ThemeMode.system,
+      theme: AppTheme.LightTheme,
+      darkTheme: AppTheme.darkTheme,
     );
   }
 }
-
