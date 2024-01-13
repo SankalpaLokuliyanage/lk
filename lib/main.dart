@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learnk/Pages/signup.dart';
 import 'package:learnk/util/theme/theme.dart';
 
 void main() {
@@ -11,9 +12,11 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      themeMode: ThemeMode.system,
+      debugShowCheckedModeBanner: false,
+      themeMode: ThemeMode.dark,
       theme: AppTheme.LightTheme,
       darkTheme: AppTheme.darkTheme,
+      home: SignUp(),
     );
   }
 }
